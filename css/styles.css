@@ -354,8 +354,6 @@ img {
     justify-content: center;
     align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-    
 }
 
 .team-social-link:hover,
@@ -620,6 +618,7 @@ img {
     background-color: #2F303A;
     padding-left: 16px;
     outline: none;
+    color: #FFFFFF;
 }
 
 .footer-btn { 
@@ -786,7 +785,7 @@ img {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 40px;
 }
 .backdrop.is-hidden .modal { 
@@ -805,6 +804,11 @@ img {
     position: absolute;
     top: 8px;
     right: 8px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+.modal-close:hover {
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .is-hidden {
@@ -818,7 +822,7 @@ img {
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 1.15px;
+    line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -826,7 +830,7 @@ img {
 }
 
 .form-field {
-    margin-bottom: 10px;
+    
 }
 
 .form-input{
@@ -876,6 +880,7 @@ img {
     resize: none;
     outline: none;
     cursor: pointer;
+    margin-bottom: 20px;
 
 }
 
@@ -926,6 +931,21 @@ img {
 .policy-check:checked + .check-text .icon-check {
     border: none;
     fill: #FFFFFF;
+}
+
+/* .policy-check {
+    display: none;
+} */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
 }
 
 .agreement-link {
